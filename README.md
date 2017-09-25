@@ -2,7 +2,8 @@
 
 # Task 
 
-'template <typename T>
+```ShellSession
+template <typename T>
 class stack
 {
 public:
@@ -15,11 +16,11 @@ private:
     size_t array_size_;
     size_t count_;
 };
-  '
+  ```
   
   # Output
   
-  '
+  ```ShellSession
 Stack of int
 12
 9
@@ -36,4 +37,4 @@ Stack of char
 u
 T
 
-'
+```
