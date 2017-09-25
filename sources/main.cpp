@@ -4,37 +4,38 @@ using namespace std;
 
 int main() {
     try {
-        cout << endl << "***** INT - Stack *****" << endl;
-        Stack<int> A; 	//Создаем объект класса Stack типа int.
-        A.push(3); 		//Добавляем элементы...
-        A.push(5);
-        A.push(7);
+        cout << endl << "Stack of int" << endl;
+        Stack<int> A;
+        A.push(23);
+        A.push(15);
+        A.push(1);
+        A.push(33);
         A.push(9);
-        A.push(2);
-        A.push(4);
-        A.push(6);
-        A.push(8);
+        A.push(12);
 
-        for(int i = 0; i < (A.count()+i); i++) { 	//Удаляем элементы.
+        for(int i = 0; i < (A.count()+i); i++)
+        {
             cout << A.pop() << endl;
         }
         cout << endl << endl;
 
-        cout << "**** CHAR - Stack *****" << endl;
-        Stack<char> B(2); 	//Создаем объект класса Stack типа int, размера 2.
-        B.push('3'); 		//Добавляем элементы...
-        B.push('3');
-        B.push('-');
-        B.push('8');
-        B.push('U');
-        B.push('I');
+        cout << "Stack of char" << endl;
+        Stack<char> B(2);
+        B.push('T');
+        B.push('u');
+        B.push(';');
+        B.push('+');
+        B.push('98');
 
-        for(int i = 0; i < (B.count()+i); i++) { 	//Удаляем элементы.
+        for(int i = 0; i < (B.count()+i); i++)
+        {
             cout << B.pop();
         }
         cout << endl << endl;
+    }
 
-    } catch(const exception& e) { 	//Ловим исключения.
+    catch(const exception& e)
+    {
         cout << e.what() << endl;
     }
 }
