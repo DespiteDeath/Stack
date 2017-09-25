@@ -29,7 +29,7 @@ int main() {
 
         for(int i = 0; i < (B.count()+i); i++)
         {
-            cout << B.pop();
+            cout << B.pop() << endl;;
         }
         cout << endl << endl;
     }
